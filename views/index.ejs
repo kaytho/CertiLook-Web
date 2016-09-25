@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CertiLook Admin</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>CertiLook Admin</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ticket #</th>                    
+                    <th>Admin #</th>
+                    <th>Student #</th>
+                    <th>Checking In</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% inspections.forEach(function(inspection) { %>
+                    <tr>
+                        <td><a href="#"><%=inspection.ticketNumber%></a></td>                        
+                        <td><%=inspection.snumber%></td>
+                        <td><%=inspection.anumber%></td>
+                        <td><%=inspection.checkingIn%></td>
+                    </tr>
+                <% })%>
+            </tbody>
+        </table>
+    </div>
+
+    <script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
