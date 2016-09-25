@@ -26,7 +26,11 @@
                         <td><a href="#"><%=inspection.ticketNumber%></a></td>                        
                         <td><%=inspection.snumber%></td>
                         <td><%=inspection.anumber%></td>
-                        <td><%=inspection.checkingIn%></td>
+                        <% if(inspection.checkingIn){%>
+                            <td>Checkin</td>
+                        <% } else { %>
+                            <td>Checkout</td>
+                        <%}%>
                     </tr>
                 <% })%>
             </tbody>
