@@ -46,10 +46,11 @@ app.post("/", function(req,res){
     })
 })
 
-/** app.listen(3000, function () {
+ app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
-});*/
+});
 
-  app.listen(process.env.PORT, process.env.IP, function(){
+ /**  app.listen(process.env.PORT, process.env.IP, function(){
         console.log("CertiLook is up and running")
 })
+*/
